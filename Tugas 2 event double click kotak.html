@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Tugas 2 Event Double Click</title>
+<script src="/praktek4/js/jquery-3.6.0.min.js"></script>
+<script>
+   $(document).ready(function() {
+    $("div").dblclick(function() {
+    $("#box1").dblclick(function() {
+    $("#box1").addClass("ganti_warna");
+    $("#box2").dblclick(function() {
+    $("#box2").addClass("ganti_warna2");
+    $("#box3").dblclick(function() {
+    $("#box3").addClass("ganti_warna3");
+    $("#box4").dblclick(function() {
+    $("#box4").addClass("ganti_warna4");
+    })
+    })
+    })
+})
+    })
+   });
+   </script>
+   <style>
+     div {
+       width: 70px;
+       height: 70px;
+       background-color: yellow ;
+       border: 2px solid black;
+       padding: 0 10px;
+       float: left;
+       margin: 5px;
+       cursor: pointer;
+     }
+     .ganti_warna {
+     background-color: #F3C5C5;}
+     .ganti_warna2 {
+     background-color: #C1A3A3;}
+     .ganti_warna3 {
+     background-color: #886F6F;}
+     .ganti_warna4 {
+     background-color: #694E4E;}
+   </style>
+</head>
+<body>
+<h2> Event Double Click Kotak </h2>
+<p> Double click untuk merubah warna</p>
+<div id="box1"></div>
+<div id="box2"></div>
+<div id="box3"></div>
+<div id="box4"></div>
+</body>
+</html>

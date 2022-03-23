@@ -1,0 +1,30 @@
+<html>
+<head>
+<title> Tugas 3 efek fade </title>
+<script src="/praktek4/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$("#fadeout").click(function() {
+$("#box").fadeOut("slow");});
+$("#fadein").click(function() {
+$("#box").fadeIn("slow");});
+$("#fadetime").click(function() {
+$("#box").fadeTo("slow", 0.3); });
+});
+</script>
+<style type="text/css">
+#box {
+width: 100px;
+height: 100px;
+background-color: yellow;
+}
+</style>
+</head>
+<body>
+<h2>Efek Fade</h2>
+<div id="box"></div>
+<p> <button id="fadeout">Fade Out</button>
+<button id="fadein">Fade In</button>
+<button id="fadetime">Fade To 0.3 </button> </p>
+</body>
+</html>
